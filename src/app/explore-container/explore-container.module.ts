@@ -11,4 +11,9 @@ import { ExploreContainerComponent } from './explore-container.component';
   declarations: [ExploreContainerComponent],
   exports: [ExploreContainerComponent]
 })
-export class ExploreContainerComponentModule {}
+export class ExploreContainerComponentModule {
+
+  ionViewWillLeave() {
+    console.log('ExploreContainerComponentModule ionViewWillLeave')
+  }
+}
